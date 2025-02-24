@@ -1,0 +1,121 @@
+.tile h1 {
+    background: linear-gradient(270deg, rgb(252, 167, 9) 30.09%, rgb(238, 15, 201) 90.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 80px 170px;
+    justify-content: center;
+  }
+  
+  /* Service Box */
+  .services-con {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 10px;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  
+  .services-con h2 {
+    font-size: 25px;
+    font-weight: 700;
+    background: linear-gradient(270deg, rgb(252, 167, 9) 55%, rgb(238, 15, 201) 96.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .services-con p {
+    color: #f7f3f3;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 300px;
+  }
+  
+  /* Read More Button */
+  .service-read {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .service-read h3 {
+    margin-left: 10px;
+  }
+  
+  /* Hover Effect */
+  .services-con:hover {
+    border: 2px solid #fc05ba;
+    background-image: linear-gradient(45deg, #de0f92, #823008);
+    transform: scale(1.05);
+    transition: 0.4s;
+  }
+  
+  /* 🔹 Mobile Responsive */
+  @media (max-width: 1024px) {
+    .services {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin: 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin: 40px;
+    }
+  
+    .services-con {
+      padding: 30px;
+      text-align: center;
+    }
+  
+    .service-read {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tile h1 {
+      font-size: 30px;
+    }
+  
+    .services {
+      margin: 30px 20px;
+    }
+  
+    .services-con {
+      padding: 20px;
+    }
+  
+    .services-con h2 {
+      font-size: 22px;
+    }
+  
+    .services-con p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  
+    .service-read {
+      font-size: 14px;
+    }
+  }
+  

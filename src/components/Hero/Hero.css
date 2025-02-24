@@ -1,0 +1,128 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+/* Profile Image */
+.img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 60px;
+    object-fit: cover;
+}
+
+/* Hero Title */
+.hero h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* Gradient Text */
+.hero span {
+    background: linear-gradient(270deg, rgb(170, 60, 6) 10%, rgb(217, 20, 125) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hero Paragraph */
+.hero p {
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(186, 186, 186);
+}
+
+/* Hero Action Buttons */
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+/* Connect Button */
+.hero-connect {
+    padding: 15px 25px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, rgb(224, 150, 14) -5.09%, rgb(164, 12, 128) 110.9%);
+    cursor: pointer;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+/* Resume Button */
+.hero-resume {
+    padding: 15px 50px;
+    border-radius: 50px;
+    border: 2px solid rgb(197, 189, 189);
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    transition: 0.3s;
+}
+
+/* Hover Effects */
+.hero-connect:hover {
+    border: 2px solid white;
+    transform: scale(1.05);
+}
+
+.hero-resume:hover {
+    border-color: #c80dcf;
+    transform: scale(1.05);
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+    .hero p {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .hero-action {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-resume {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-connect {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .hero-connect,
+    .hero-resume {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}

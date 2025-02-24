@@ -1,0 +1,195 @@
+/* About section */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 70px 170px;
+}
+
+/* About title styling */
+.about-title h1 {
+    background: linear-gradient(264deg, rgb(248, 163, 4) -5.09%, rgb(238, 15, 201) 106.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* About section container */
+.about-sec {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Left Image */
+.ab-left img {
+    height: 400px;
+    width: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Right content */
+.ab-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* About paragraph */
+.ab-para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+/* Skills section */
+.ab-skill {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Skill Bars */
+.ab-skills {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.ab-skills p {
+    min-width: 100px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ab-skills hr {
+    outline: none;
+    border: none;
+    height: 6px;
+    width: 50%;
+    border-radius: 50px;
+    background: linear-gradient(264deg, rgb(248, 163, 4) -5.09%, rgb(238, 15, 201) 106.28%);
+}
+
+/* Achievements section */
+.ab-achive {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.ab-ach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.ab-ach h1 {
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient(264deg, rgb(248, 163, 4) -5.09%, rgb(238, 15, 201) 106.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ab-ach p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Hover Effects */
+.ab-skills:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.ab-ach:hover {
+    transform: scale(1.12);
+    transition: 0.5s;
+}
+
+/* 🔹 Mobile Responsive */
+@media (max-width: 1024px) {
+    .about {
+        margin: 50px 50px;
+    }
+    
+    .about-sec {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ab-left img {
+        height: 300px;
+        width: 250px;
+    }
+
+    .ab-right {
+        gap: 20px;
+    }
+
+    .ab-para {
+        font-size: 16px;
+    }
+
+    .ab-achive {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        margin: 40px 20px;
+    }
+
+    .about-title h1 {
+        font-size: 32px;
+    }
+
+    .ab-left img {
+        height: 250px;
+        width: 220px;
+    }
+
+    .ab-para {
+        font-size: 15px;
+    }
+
+    .ab-skills {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ab-skills hr {
+        width: 80%;
+    }
+
+    .ab-ach h1 {
+        font-size: 24px;
+    }
+
+    .ab-ach p {
+        font-size: 16px;
+    }
+}

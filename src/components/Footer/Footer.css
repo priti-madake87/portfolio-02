@@ -1,0 +1,160 @@
+/* Footer Section */
+.footer {
+    margin: 50px 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Footer Top Section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Footer Left (Text) */
+.footer-top-left p {
+    font-size: 18px;
+    max-width: 500px;
+    color: rgb(186, 186, 186);
+}
+
+/* Footer Right (Email & Button) */
+.footer-top-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Email Input Box */
+.footer-email {
+    display: flex;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: #2a2a30;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Email Input */
+.footer-email input {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: rgb(194, 194, 74);
+    font-family: Outfit;
+    font-size: 18px;
+    width: 100%;
+}
+
+/* Subscribe Button */
+.footer-sb {
+    font-size: 18px;
+    padding: 12px 40px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, rgb(224, 150, 14) -5.09%, rgb(164, 12, 128) 110.9%);
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    color: white;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: rgb(186, 186, 186);
+}
+
+/* Footer Links */
+.footer-bottom-right {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Hover Effects */
+.footer-sb:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+    .footer {
+        margin: 40px 50px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-email {
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-top-right {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer-bottom-right {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        margin: 30px 20px;
+    }
+
+    .footer-top-left p {
+        font-size: 16px;
+    }
+
+    .footer-email {
+        padding: 12px 15px;
+    }
+
+    .footer-email input {
+        font-size: 16px;
+    }
+
+    .footer-sb {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+
+    .footer-bottom {
+        font-size: 16px;
+    }
+
+    .footer-bottom-right {
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+    }
+}

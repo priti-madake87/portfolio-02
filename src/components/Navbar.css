@@ -1,0 +1,108 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #222;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(264deg, rgb(224, 150, 14) -5.09%, rgb(164, 12, 128) 110.9%);
+    cursor: pointer;
+    transition: 0.3s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 40px;
+}
+
+/* Desktop Navigation */
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navigation links */
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.nav-menu li a:hover {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Button */
+.nav-button {
+    background: linear-gradient(264deg, rgb(248, 163, 4) -5.09%, rgb(238, 15, 201) 106.28%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-right: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.nav-button:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Mobile Responsive */
+@media (max-width: 768px) {
+    .mobile-menu-icon {
+        display: block; /* Show menu icon on mobile */
+    }
+
+    /* Hide default menu */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #222;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* Show menu when mobile-nav class is added */
+    .nav-menu.mobile-nav {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .nav-button {
+        display: none; /* Hide button on small screens */
+    }
+}
